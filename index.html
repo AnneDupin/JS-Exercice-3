@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice 3</title>
+</head>
+
+
+<body>
+    <h1>Using Prompt()</h1>
+    <p class="p">prompt</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('p.p').addEventListener('click', handleClickP);
+            if ('document' in window) {
+                console.log('doc');
+            }
+        });
+
+        function handleClickP(ev) {
+            //prompt
+            let answer = prompt('Quel est mon prénom ?', 'Anne');
+            console.log(answer); //answer Anne
+        }
+    </script>
+</body>
+
+</html>
